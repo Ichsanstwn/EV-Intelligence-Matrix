@@ -427,6 +427,28 @@ st.markdown(
     div[style*="border-top:1px solid rgba(255,255,255,0.06)"] {
         border-top-color: rgba(0, 61, 124, 0.10) !important;
     }
+
+    div[data-baseweb="tag"] {
+        white-space: normal !important;
+        height: auto !important;
+        max-width: 100% !important;
+        padding: 4px 10px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+    }
+
+    div[data-baseweb="tag"] span {
+        white-space: normal !important;
+        overflow: visible !important;
+        text-overflow: unset !important;
+    }
+
+    /* Memperlebar jarak antar pilihan agar tidak menumpuk saat turun baris */
+    div[data-testid="stMultiSelect"] div[data-baseweb="select"] > div {
+        gap: 6px !important;
+        padding-top: 4px !important;
+        padding-bottom: 4px !important;
+    }
 </style>
 """),
     unsafe_allow_html=True,
