@@ -96,7 +96,7 @@ st.markdown(
         box-shadow: 0 12px 34px rgba(15, 53, 92, 0.12), 0 0 34px rgba(0, 119, 182, 0.16), inset 0 0 18px rgba(255, 255, 255, 0.80);
         backdrop-filter: blur(10px);
         position: relative;
-        overflow: hidden;
+        overflow: visible;
         isolation: isolate;
     }
 
