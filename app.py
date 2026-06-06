@@ -305,10 +305,16 @@ st.markdown(
         color: #005A9C !important;
     }
 
+    /* GANTI DENGAN KODE INI */
     div[data-testid="stMultiSelect"] div[data-baseweb="select"] > div:first-child {
-        padding-left: 14px !important;
-        margin-left: 0 !important;
-        transform: none !important;
+        padding-left: 8px !important;
+        margin-left: 4px !important;
+    }
+
+    div[data-testid="stMultiSelect"] div[data-baseweb="tag"] {
+        margin-left: 4px !important;
+        margin-right: 4px !important;
+        padding-left: 8px !important; /* Memperbaiki teks huruf pertama agar tidak mepet */
     }
 
     div[data-testid="stMultiSelect"] div[data-baseweb="tag"] {
