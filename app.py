@@ -96,7 +96,7 @@ st.markdown(
         box-shadow: 0 12px 34px rgba(15, 53, 92, 0.12), 0 0 34px rgba(0, 119, 182, 0.16), inset 0 0 18px rgba(255, 255, 255, 0.80);
         backdrop-filter: blur(10px);
         position: relative;
-        overflow: visible;
+        overflow: hidden;
         isolation: isolate;
     }
 
@@ -305,34 +305,27 @@ st.markdown(
         color: #005A9C !important;
     }
 
-    div[data-testid="stMultiSelect"] div[data-baseweb="select"] {
-        overflow: visible !important;
-        min-height: 48px !important;
-    }
-
     div[data-testid="stMultiSelect"] div[data-baseweb="select"] > div:first-child {
         padding-left: 14px !important;
         margin-left: 0 !important;
         transform: none !important;
-        min-height: 46px !important;
     }
 
     div[data-testid="stMultiSelect"] div[data-baseweb="tag"] {
         box-sizing: border-box !important;
         display: inline-flex !important;
         align-items: center !important;
-        margin-left: 4px !important;
-        padding: 2px 10px 2px 12px !important;
+        margin-left: 8px !important;
+        padding: 2px 10px 2px 18px !important;
         position: relative !important;
         left: 0 !important;
         transform: none !important;
         text-indent: 0 !important;
         clip-path: none !important;
-        overflow: visible !important;
     }
 
     div[data-testid="stMultiSelect"] div[data-baseweb="tag"]:first-of-type {
-        margin-left: 0 !important;
+        margin-left: 10px !important;
     }
 
     div[data-testid="stMultiSelect"] div[data-baseweb="tag"] *,
