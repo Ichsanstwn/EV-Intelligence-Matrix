@@ -264,6 +264,17 @@ st.markdown(
         box-shadow: 0 6px 18px rgba(15, 53, 92, 0.07), 0 0 14px rgba(0, 119, 182, 0.06) !important;
     }
 
+    /* Tambahan Fix Dropdown Terpotong */
+    div[data-testid="stMultiSelect"] {
+        overflow: visible !important;
+    }
+    .stMultiSelect [data-baseweb="popover"] {
+        z-index: 9999 !important;
+    }
+    div[data-testid="stExpander"] {
+        overflow: visible !important;
+    }
+
     div[data-testid="stExpander"] details,
     div[data-testid="stExpander"] summary,
     div[data-testid="stExpander"] div[role="button"] {
@@ -1335,6 +1346,8 @@ def main():
             xaxis=dict(gridcolor="rgba(16,42,67,0.10)", tickfont=dict(color="#52677A"))
         )
         st.plotly_chart(fig_sc, use_container_width=True)
+
+        st.markdown("<div style='height: 350px;'></div>", unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
