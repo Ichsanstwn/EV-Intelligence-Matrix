@@ -274,6 +274,20 @@ st.markdown(
     div[data-testid="stExpander"] {
         overflow: visible !important;
     }
+               
+    /* Memaksa semua kontainer Streamlit agar tidak memotong elemen dropdown */
+    div[data-testid="stVerticalBlockBorderWrapper"],
+    div[data-testid="stVerticalBlockBorderWrapper"] > div,
+    div[data-testid="stVerticalBlock"],
+    div[data-testid="stHorizontalBlock"],
+    div[data-testid="stExpanderDetails"] {
+        overflow: visible !important;
+    }
+
+    /* Memastikan area popover multiselect bisa keluar dari parent */
+    div[data-baseweb="select"] {
+        position: relative;
+    }
 
     div[data-testid="stExpander"] details,
     div[data-testid="stExpander"] summary,
